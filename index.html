@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f7f5f2">
+<title>cael</title>
+<meta name="description" content="Quiet home tools for a softer room. Light, linen, and the small things you leave out.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="site.js" defer></script>
+</head>
+<body data-page="home">
+<div class="announce" data-label="公告栏 Announcement"><p>Complimentary shipping on orders over $75</p></div>
+<header class="nav" data-label="页眉 Header">
+  <div class="nav-row">
+    <nav class="nav-links" aria-label="Primary">
+      <a href="shop.html">Shop</a>
+      <a href="about.html">The Edit</a>
+      <a href="support.html">Care</a>
+    </nav>
+    <button type="button" class="nav-burger" data-open="menu">Menu</button>
+    <a class="logo" href="index.html">cael</a>
+    <div class="nav-tools">
+      <button type="button" data-open="search">Search</button>
+      <button type="button" data-open="account" class="hide-sm">Account</button>
+      <button type="button" data-open="bag">Bag <span data-count>0</span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" data-label="首屏 Hero">
+    <img src="images/hero.jpg" alt="A pale bedroom in morning light, linen pulled smooth">
+    <div class="hero-copy">
+      <p class="eyebrow">Spring</p>
+      <h1>The quiet edit.</h1>
+      <a class="text-link" href="shop.html">Shop objects</a>
+    </div>
+  </section>
+
+  <section class="block" data-label="分类入口 Collection list">
+    <div class="wrap">
+      <div class="rooms">
+        <a href="shop.html?room=kitchen"><img src="images/kitchen.jpg" alt="A pale kitchen"><span>Kitchen</span></a>
+        <a href="shop.html?room=desk"><img src="images/desk.jpg" alt="A light wood desk"><span>Desk</span></a>
+        <a href="shop.html?room=closet"><img src="images/closet.jpg" alt="A quiet closet"><span>Closet</span></a>
+        <a href="shop.html?room=entry"><img src="images/entry.jpg" alt="A bright entry"><span>Entry</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" data-label="精选商品 Featured collection" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Objects</h2>
+        <a href="shop.html">Shop all</a>
+      </div>
+      <div class="grid">
+        <a class="card" href="product.html?id=arc">
+          <div class="photo"><img src="images/lamp.jpg" alt="A small lamp in a pale room"><button class="quick" type="button" data-add="arc" data-swatch="bone">Add to bag</button></div>
+          <div class="card-meta"><h2>Arc Light</h2><p>$36</p></div>
+          <p class="card-line">Motion light for cabinets and night halls.</p>
+        </a>
+        <a class="card" href="product.html?id=fold">
+          <div class="photo"><img src="images/sink.jpg" alt="A white sink and calm counter"><button class="quick" type="button" data-add="fold" data-swatch="sand">Add to bag</button></div>
+          <div class="card-meta"><h2>Fold Rack</h2><p>$28</p></div>
+          <p class="card-line">Folds flat and gives the counter back.</p>
+        </a>
+        <a class="card" href="product.html?id=line">
+          <div class="photo"><img src="images/desk.jpg" alt="A quiet desk by a window"><button class="quick" type="button" data-add="line" data-swatch="bone">Add to bag</button></div>
+          <div class="card-meta"><h2>Line Clips</h2><p>$16</p></div>
+          <p class="card-line">Cords along the edge. No drill.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="split" data-label="品牌语句 Rich text">
+    <img src="images/living.jpg" alt="A soft living room in warm daylight">
+    <div class="split-copy">
+      <p class="eyebrow">The point of view</p>
+      <h2>Made to be left out.</h2>
+      <p>Small tools with a linen hand. For rented kitchens, shared desks, and rooms you actually photograph.</p>
+      <a class="text-link" href="about.html">Read the edit</a>
+    </div>
+  </section>
+
+  <section class="block" data-label="场景横滑 Lifestyle row">
+    <div class="wrap">
+      <div class="pair">
+        <a href="product.html?id=hook">
+          <img src="images/entry.jpg" alt="Sun on a pale wall">
+          <p>The door you already have.</p>
+        </a>
+        <a href="product.html?id=drawer">
+          <img src="images/linen.jpg" alt="Folded linen">
+          <p>A drawer that closes.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" data-label="评价位 Testimonials" style="padding-top:0">
+    <div class="wrap">
+      <div class="reviews">
+        <article class="review"><q>It looks like it belongs with the ceramics.</q><span>Studio note</span></article>
+        <article class="review"><q>The rack disappears. That is the point.</q><span>Studio note</span></article>
+        <article class="review"><q>I stopped hiding the useful things.</q><span>Studio note</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="faq" data-label="问答 Collapsible" style="padding-top:0">
+    <div class="wrap" style="max-width:720px">
+      <h2 style="font-size:clamp(40px,5vw,60px);margin-bottom:12px">Care</h2>
+      <div class="folds">
+        <div class="fold">
+          <button type="button" aria-expanded="false">How long does it take?</button>
+          <div class="fold-a" hidden>Most orders arrive in 3–6 business days. The date at checkout is the one that counts. <a href="support.html#shipping">Shipping</a>.</div>
+        </div>
+        <div class="fold">
+          <button type="button" aria-expanded="false">Can I send it back?</button>
+          <div class="fold-a" hidden>Yes, within 30 days if it is unused. Return shipping is yours unless it arrives damaged.</div>
+        </div>
+        <div class="fold">
+          <button type="button" aria-expanded="false">Will it fit?</button>
+          <div class="fold-a" hidden>Measure first. Sizes go on the page after a sample is measured.</div>
+        </div>
+        <div class="fold">
+          <button type="button" aria-expanded="false">Do I need a drill?</button>
+          <div class="fold-a" hidden>Not for this edit. The light, clips, and hooks are made for rentals.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer data-label="页脚 Footer">
+  <div class="wrap footer">
+    <div>
+      <a class="logo" href="index.html">cael</a>
+      <p>Quiet tools for a softer room.</p>
+    </div>
+    <div>
+      <p class="foot-label">Shop</p>
+      <a href="shop.html">All objects</a>
+      <a href="product.html?id=arc">Arc Light</a>
+      <a href="product.html?id=fold">Fold Rack</a>
+      <a href="product.html?id=line">Line Clips</a>
+    </div>
+    <div>
+      <p class="foot-label">Care</p>
+      <a href="support.html#shipping">Shipping</a>
+      <a href="support.html#returns">Returns</a>
+      <a href="support.html#privacy">Privacy</a>
+      <a href="about.html">The edit</a>
+    </div>
+    <form class="news">
+      <p class="foot-label">Notes</p>
+      <p>A short note when something new is ready.</p>
+      <input type="email" required placeholder="Email" aria-label="Email">
+      <button class="btn" type="submit">Join</button>
+      <p class="thanks" hidden>You’re on the list.</p>
+    </form>
+  </div>
+</footer>
+<p class="legal">Prices in USD. Photos are placeholders. <a href="blueprint.html">框架说明</a></p>
+</body>
+</html>

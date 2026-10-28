@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f7f5f2">
+<title>cael · Shopify 框架</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="site.js" defer></script>
+</head>
+<body data-page="blueprint">
+<div class="announce" data-label="公告栏 Announcement"><p>Complimentary shipping on orders over $75</p></div>
+<header class="nav" data-label="页眉 Header">
+  <div class="nav-row">
+    <nav class="nav-links" aria-label="Primary">
+      <a href="shop.html">Shop</a>
+      <a href="about.html">The Edit</a>
+      <a href="support.html">Care</a>
+    </nav>
+    <button type="button" class="nav-burger" data-open="menu">Menu</button>
+    <a class="logo" href="index.html">cael</a>
+    <div class="nav-tools">
+      <button type="button" data-open="search">Search</button>
+      <button type="button" data-open="account" class="hide-sm">Account</button>
+      <button type="button" data-open="bag">Bag <span data-count>0</span></button>
+    </div>
+  </div>
+</header>
+<main class="wrap blueprint">
+  <header class="page-head">
+    <p class="kicker">Shopify 框架</p>
+    <h1>小家居工具店，先把骨架立住。</h1>
+    <p class="lede">店面是英文，因为卖去海外。品牌名 cael 是暂定的。右下角「区块」会标出每一块对应的 Shopify 区域。这一版能点、能加购，不收款。支付留在 Shopify Checkout。</p>
+    <div class="cta"><a class="btn" href="index.html">打开店面</a></div>
+  </header>
+
+  <nav class="toc" aria-label="目录">
+    <a href="#path">路径</a>
+    <a href="#map">页面对应</a>
+    <a href="#product">商品页</a>
+    <a href="#admin">后台</a>
+    <a href="#look">气质</a>
+    <a href="#photo">换照片</a>
+    <a href="#skip">先不要</a>
+    <a href="#check">上线前</a>
+  </nav>
+
+  <h2 id="path">顾客怎么走</h2>
+  <div class="flow">
+    <a href="index.html">首页</a>
+    <span>→</span>
+    <a href="shop.html">集合</a>
+    <span>→</span>
+    <a href="product.html?id=arc">商品</a>
+    <span>→</span>
+    <span>购物袋</span>
+    <span>→</span>
+    <span>Shopify Checkout</span>
+    <span>→</span>
+    <span>订单邮件</span>
+  </div>
+  <p class="lede" style="margin-top:14px">首页负责第一眼和气质，集合负责找，商品页负责决定，购物袋负责确认。结账不要自己做，用 Shopify 自带的那一页，Shop Pay 和 PayPal 都挂在那里。</p>
+
+  <h2 id="map">页面上要有的东西</h2>
+  <table>
+    <thead><tr><th>你在店里看到的</th><th>Shopify 里它是什么</th><th>这一版</th></tr></thead>
+    <tbody>
+      <tr><td>顶部深绿滚动条</td><td>Announcement bar</td><td>满 $75 包邮、时效、退货</td></tr>
+      <tr><td>cael、菜单、搜索、账户、购物袋</td><td>Header</td><td>手机收进 Menu</td></tr>
+      <tr><td>大标题和柜灯</td><td>Hero / Image banner</td><td>一句主张，两个按钮</td></tr>
+      <tr><td>三件商品</td><td>Featured collection</td><td>可直接加购</td></tr>
+      <tr><td>绿底大字</td><td>Rich text</td><td>品牌语气，不放折扣</td></tr>
+      <tr><td>Kitchen / Desk / Closet / Entry</td><td>Collection list</td><td>点进去带筛选</td></tr>
+      <tr><td>横滑的房间</td><td>多列或画廊，用手滑</td><td>Instagram 那种连续画面</td></tr>
+      <tr><td>Studio notes</td><td>Testimonials</td><td>占位。有真实订单再换评价应用</td></tr>
+      <tr><td>折叠问答</td><td>Collapsible content</td><td>时效、退货、尺寸、是否打孔</td></tr>
+      <tr><td>页脚邮箱</td><td>Newsletter</td><td>先用 Shopify Email</td></tr>
+      <tr><td>页脚四栏</td><td>Footer</td><td>商店、政策、邮件</td></tr>
+      <tr><td>Shop 的房间和排序</td><td>Collection template</td><td>筛选、排序、集合描述</td></tr>
+      <tr><td>颜色、数量、加购、折叠说明</td><td>Product template</td><td>六个样品走同一套模板</td></tr>
+      <tr><td>右侧购物袋</td><td>Cart drawer</td><td>满额进度条。不跳去自建结账</td></tr>
+      <tr><td>The Edit</td><td>Page</td><td>品牌故事和色板</td></tr>
+      <tr><td>Care</td><td>Policies + 联系</td><td>物流、退货、隐私、条款、留言</td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="product">商品页每一件都要备齐</h2>
+  <ul>
+    <li>至少三张图：在房间里、近一点、暗一点。主图是生活场景，不是白底五金。</li>
+    <li>房间名、品名、价格、一句它做什么。</li>
+    <li>颜色变体。同一价格就写明，不要假的划线价。</li>
+    <li>数量和加入购物袋。</li>
+    <li>三到四条短卖点，写成生活里的动作，不要亚马逊那种粗体堆砌。</li>
+    <li>折叠：怎么用、物流、退货。</li>
+    <li>相关商品。</li>
+    <li>没量过的流明、承重、通用尺寸、食品级、无痕拆除，先不写。</li>
+  </ul>
+  <div class="panel">
+    <p class="kicker">这一版的六个样品</p>
+    <p>Arc Light 磁吸柜灯 $36 · Fold Rack 折叠沥水架 $28 · Line Clips 理线夹 $16 · Oak Sweep 桌面刷 $24 · Still Hook 门后钩 $18 · Drawer Rest 抽屉分隔 $26</p>
+  </div>
+
+  <h2 id="admin">后台要开的，前台才站得住</h2>
+  <ul>
+    <li>主题用 Online Store 2.0，Dawn 就够。按上面的区块重排，不必先买一个很重的主题。</li>
+    <li>商品：标题、价格、图片、颜色变体、SKU、库存、重量。重量不填，运费会算错。</li>
+    <li>集合：All、Kitchen、Desk、Closet、Entry。页眉和页脚菜单各做一份。</li>
+    <li>市场先只开美国，货币 USD。能发哪个国家，再加哪个配送区域。</li>
+    <li>运费示例：满 75 美元包邮，否则 6 美元。换成你的真实报价。</li>
+    <li>税用 Shopify Tax。美国价格在结账里算出税额。</li>
+    <li>付款用 Shopify Payments、Shop Pay、PayPal。收款主体要能开通其中之一，这一版没有假装已经开通。</li>
+    <li>打开客户账户。结账页放上 logo 和店名。</li>
+    <li>政策四页：物流、退货、隐私、服务条款。Shopify 结账会检查它们在不在。</li>
+    <li>邮件先用 Shopify Email。评价先空着，有订单再装。广告开了再装 Meta Pixel 和 GA4。</li>
+    <li>域名接好、文案换成真实时效之后，再关掉密码页。</li>
+  </ul>
+
+  <h2 id="look">气质</h2>
+  <p>高级、简约，同时要动。参考的是 Instagram 上那些把小公寓拍得很干净的家居账号：暖、留白、东西可以留在台面上，看起来贵，但不冷。页面不写人群标签，气质放在颜色、字体和场景里。</p>
+  <div class="swatch-row" style="margin-top:16px">
+    <div><i style="background:#F3EEE6"></i>骨色背景</div>
+    <div><i style="background:#FBF8F3"></i>纸色卡片</div>
+    <div><i style="background:#314036"></i>橄榄，按钮和绿带</div>
+    <div><i style="background:#C4A484"></i>黏土，小点缀</div>
+    <div><i style="background:#241F1A"></i>墨色文字</div>
+  </div>
+  <ul>
+    <li>标题用衬线 Fraunces，正文用 Outfit。大标题很松，正文很短。</li>
+    <li>图片圆角大，按钮是胶囊。留白比装饰多。</li>
+    <li>动效只留这几处：公告慢滚、标题里的词轻轻换、柜灯和叶子轻动、卡片上浮、房间横滑、进场上移、购物袋滑入。</li>
+    <li>不要光标拖尾，不要整页视差，不要弹窗要邮箱。</li>
+  </ul>
+
+  <h2 id="photo">插画换成照片时</h2>
+  <ul>
+    <li>自然侧光。骨色墙、橡木、亚麻、一只杯子就够。</li>
+    <li>产品留在场景里。夜景只给柜灯。</li>
+    <li>手可以入画，脸不必。道具少。</li>
+    <li>每张图写一句明白的替代文字。</li>
+    <li>版式不用改，换掉画面即可。</li>
+  </ul>
+
+  <h2 id="skip">先不要放上页面的</h2>
+  <ul>
+    <li>倒计时、大红折扣、假的划线价。</li>
+    <li>假的杂志 logo、假的五星和“已验证购买”。</li>
+    <li>白底货架主图、一屏塞满徽章。</li>
+    <li>没测过的参数，以及“通用尺寸”“无痕”“食品级”。</li>
+    <li>一上来就装很多插件。页面先干净。</li>
+  </ul>
+
+  <h2 id="check">上线前对着看一遍</h2>
+  <ul>
+    <li>每个 SKU 的重量、库存、真实发货地。</li>
+    <li>物流文案和运费模板是同一句话。</li>
+    <li>退货地址是真的。</li>
+    <li>收款方式已经开通。</li>
+    <li>手机上：菜单、加购、购物袋、结账能走完。</li>
+    <li>密码页关掉之前，自己用一单测试支付走一遍。</li>
+  </ul>
+</main>
+<footer data-label="页脚 Footer">
+  <div class="wrap footer">
+    <div>
+      <a class="logo" href="index.html">cael<span>.</span></a>
+      <p>Small tools for rooms you actually photograph.</p>
+    </div>
+    <div>
+      <p class="foot-label">Shop</p>
+      <a href="shop.html">All objects</a>
+      <a href="index.html">首页</a>
+      <a href="blueprint.html">框架</a>
+    </div>
+    <div>
+      <p class="foot-label">Care</p>
+      <a href="support.html#shipping">Shipping</a>
+      <a href="support.html#returns">Returns</a>
+      <a href="about.html">The edit</a>
+    </div>
+    <form class="news">
+      <p class="foot-label">Notes</p>
+      <p>A short note when a new object is ready.</p>
+      <input type="email" required placeholder="Email" aria-label="Email">
+      <button class="btn" type="submit">Join</button>
+      <p class="thanks" hidden>You’re on the list.</p>
+    </form>
+  </div>
+</footer>
+<p class="legal">这是框架预览，不是在收款的商店。</p>
+</body>
+</html>
